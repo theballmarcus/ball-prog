@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4fjo2jnwhih"]
+
+[ext_resource type="Script" uid="uid://3gjtuggv4vtj" path="res://scenes/main/nextScene.gd" id="1_hyk8p"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_hyk8p")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 172.0
+offset_top = 89.0
+offset_right = 274.0
+offset_bottom = 112.0
+text = "HEJ  MED DIG"
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NextSceneButton" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 178.0
+offset_right = 297.0
+offset_bottom = 233.0
+text = "Go to next scene"
+
+[connection signal="button_down" from="Control/NextSceneButton" to="Control/NextSceneButton" method="_on_NextSceneButton_pressed"]

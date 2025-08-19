@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://5n2ku14p7ptc"]
+
+[ext_resource type="Script" uid="uid://btpi7jbdmpls2" path="res://scenes/second/second.gd" id="1_b2wu3"]
+
+[node name="Second" type="Node2D"]
+script = ExtResource("1_b2wu3")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 157.0
+offset_top = 106.0
+offset_right = 323.0
+offset_bottom = 207.0
+text = "You are at next scene. Nothing to do here though, maybe you'd like to go back?"
+autowrap_mode = 2
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GoBackButton" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 277.0
+offset_right = 331.0
+offset_bottom = 308.0
+text = "Click me to go back :)"
