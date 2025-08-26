@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Welcome</title>
+  <link rel="stylesheet" href="/public/styles.css" />
+  <style>
+    body { margin:0; font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto; background:radial-gradient(circle at 25% 20%, #1d2531, #0f1115 60%); color:#e5e7eb; min-height:100vh; display:flex; align-items:center; justify-content:center; }
+    .landing { text-align:center; padding:60px 52px; max-width:700px; background:#1b1f27d9; backdrop-filter:blur(14px); border:1px solid #2a3140; border-radius:28px; position:relative; box-shadow:0 4px 28px -6px rgba(0,0,0,.55),0 10px 60px -10px rgba(0,0,0,.5); }
+    .landing:before { content:""; position:absolute; inset:0; padding:2px; border-radius:inherit; background:linear-gradient(140deg,rgba(99,102,241,.5),rgba(139,92,246,.5),rgba(236,72,153,.4)); -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0); -webkit-mask-composite:xor; mask-composite:exclude; pointer-events:none; z-index:-1; }
+    h1 { margin:0 0 22px; font-size:48px; line-height:1.05; font-weight:700; letter-spacing:.5px; background:linear-gradient(135deg,#6366f1,#8b5cf6 55%,#ec4899); -webkit-background-clip:text; background-clip:text; color:transparent; }
+    p.lead { font-size:18px; line-height:1.55; margin:0 0 40px; color:#94a3b8; }
+    .actions { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    a.button { text-decoration:none; display:inline-block; padding:16px 26px; font-weight:600; font-size:16px; letter-spacing:.4px; border-radius:16px; background:linear-gradient(135deg,#6366f1,#8b5cf6 60%,#ec4899); color:#fff; box-shadow:0 4px 18px -4px rgba(99,102,241,.55); transition:.25s transform,.25s box-shadow; }
+    a.button.secondary { background:#0f141c; border:1px solid #2d3848; color:#e5e7eb; box-shadow:none; }
+    a.button:hover { transform:translateY(-3px); box-shadow:0 6px 26px -6px rgba(99,102,241,.75); }
+    a.button.secondary:hover { border-color:#6366f1; }
+    footer { margin-top:44px; font-size:12px; letter-spacing:.5px; color:#5f6b7c; }
+  </style>
+</head>
+<body>
+  <div class="landing">
+    <h1>Hybrid Crypto<br/>Demo Platform</h1>
+    <p class="lead">Secure demonstration of RSA key exchange and AES symmetric encryption. Register to generate keys and explore encrypted workflows.</p>
+    <div class="actions">
+      <a class="button" href="/register">Get Started</a>
+      <a class="button secondary" href="/login">Sign In</a>
+    </div>
+    <footer>Demo only – do not use real credentials.</footer>
+  </div>
+</body>
+</html>
