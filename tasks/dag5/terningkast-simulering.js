@@ -2,7 +2,7 @@ var size_x = 500;
 var size_y = 500;
 
 var dice_throws = [];
-var nDice_throws = 20;
+var nDice_throws = 10;
 
 var padding = 4;
 var offset = size_x / nDice_throws;
@@ -26,7 +26,9 @@ function draw() {
         } else {
             fill(0, 0, 255);
         }
-        rect(padding / 2 + i * offset, size_y - dice_throws[i] * offset, offset - padding, dice_throws[i] * offset);
+        let height_factor = (size_y / 2) / 6;
+        let height = height_factor * dice_throws[i];
+        rect(padding / 2 + i * offset, size_y / 2 + (6-dice_throws[i]) * height_factor, offset - padding, height);
     }
 
     fill(0);
